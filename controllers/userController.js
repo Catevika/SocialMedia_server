@@ -84,7 +84,6 @@ export const deleteUser = async (req, res) => {
 export const followUser = async (req, res) => {
 	const id = req.params.id;
 	const { _id } = req.body;
-	console.log(id, _id);
 	if (_id == id) {
 		res.status(403).json('Action Forbidden');
 	} else {

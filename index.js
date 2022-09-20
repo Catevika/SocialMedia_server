@@ -30,6 +30,7 @@ mongoose
 		useNewUrlParser: true,
 		useUnifiedTopology: true
 	})
+	.then(console.log('\x1b[33m', 'MongoDB connected successfully'))
 	.then(
 		app.listen(process.env.PORT),
 		console.log('\x1b[33m', `Listening on Port: ${process.env.PORT}`)
